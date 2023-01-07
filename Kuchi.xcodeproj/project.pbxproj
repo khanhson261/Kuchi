@@ -82,7 +82,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D35C0EC7296817D20032548D /* Views */ = {
+		D357D742296979740049A18F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D3EC83AD29668B1700117C85 /* Welcome */,
@@ -92,7 +92,7 @@
 				D35C0EB5296817880032548D /* StarterView.swift */,
 				D35C0EB72968178F0032548D /* HistoryView.swift */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D38A69722966D57A0060331E /* Components */ = {
@@ -126,7 +126,7 @@
 			children = (
 				D3A4A7A02966787F00A0E0A6 /* KuchiApp.swift */,
 				D3E6193A2969750F008B22ED /* Models */,
-				D35C0EC7296817D20032548D /* Views */,
+				D357D742296979740049A18F /* Views */,
 				D3E6193D296975C9008B22ED /* ViewModels */,
 				D3E6194029697782008B22ED /* Resources */,
 				D30B185D2966ACF000B65A04 /* Info.plist */,
@@ -144,6 +144,7 @@
 				D35C0EB9296817B60032548D /* ChallengeView.swift */,
 			);
 			name = Practice;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D3E6193A2969750F008B22ED /* Models */ = {
