@@ -42,9 +42,7 @@ struct HistoryView: View {
     Text("History")
       .foregroundColor(.white)
       .font(.title)
-      #if os(iOS)
       .frame(width: UIScreen.main.bounds.width, height: 50)
-      #endif
       .background(Color.gray)
   }
   
@@ -85,7 +83,16 @@ struct HistoryView: View {
   }
   
   var body: some View {
-    EmptyView()
+      ScrollView {
+          LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
+              Section(header: header) {
+                  ForEach(history, id: \.self) { element in
+                      getElement(element)
+                  }
+             }
+          }
+      }
+      
   }
 }
 

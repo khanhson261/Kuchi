@@ -15,7 +15,7 @@ struct KuchiApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            RegisterView()
+            StarterView()
                 .environmentObject(userManager)
         }
     }
