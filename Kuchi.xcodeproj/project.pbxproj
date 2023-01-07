@@ -87,6 +87,7 @@
 			children = (
 				D3EC83AD29668B1700117C85 /* Welcome */,
 				D3E6193929697467008B22ED /* Practice */,
+				D35C0EBD296817B60032548D /* QuestionView.swift */,
 				D3EC83A929668A5E00117C85 /* HomeView.swift */,
 				D35C0EB5296817880032548D /* StarterView.swift */,
 				D35C0EB72968178F0032548D /* HistoryView.swift */,
@@ -137,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D35C0EBA296817B60032548D /* CongratulationsView.swift */,
-				D35C0EBD296817B60032548D /* QuestionView.swift */,
 				D35C0EBF296817B60032548D /* PracticeView.swift */,
 				D35C0EBC296817B60032548D /* ChoicesRow.swift */,
 				D35C0EBB296817B60032548D /* ChoicesView.swift */,
