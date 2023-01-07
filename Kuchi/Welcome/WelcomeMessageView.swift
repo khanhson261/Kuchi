@@ -37,7 +37,7 @@ struct WelcomeMessageView: View {
 }
 
 
-struct LogoImage_Previews: PreviewProvider {
+struct WelcomeMessage_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeMessageView()
     }

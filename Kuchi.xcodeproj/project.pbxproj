@@ -27,6 +27,8 @@
 		D3A3C7AF2967DB2F009F94AA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C7AE2967DB2F009F94AA /* Profile.swift */; };
 		D3A3C7B32967DB5F009F94AA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3C7B22967DB5F009F94AA /* Settings.swift */; };
 		D3A4A7A12966787F00A0E0A6 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4A7A02966787F00A0E0A6 /* KuchiApp.swift */; };
+		D3E6193C2969751D008B22ED /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6193B2969751D008B22ED /* History.swift */; };
+		D3E6193F29697671008B22ED /* KCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6193E29697671008B22ED /* KCTextField.swift */; };
 		D3EC83AA29668A5E00117C85 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC83A929668A5E00117C85 /* HomeView.swift */; };
 		D3EC83AF29668B2A00117C85 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC83AE29668B2A00117C85 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		D3A3C7B22967DB5F009F94AA /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D3A4A79D2966787F00A0E0A6 /* Kuchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A4A7A02966787F00A0E0A6 /* KuchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuchiApp.swift; sourceTree = "<group>"; };
+		D3E6193B2969751D008B22ED /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		D3E6193E29697671008B22ED /* KCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTextField.swift; sourceTree = "<group>"; };
 		D3EC83A929668A5E00117C85 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D3EC83AE29668B2A00117C85 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,44 +85,23 @@
 		D35C0EC7296817D20032548D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3EC83AD29668B1700117C85 /* Welcome */,
+				D3E6193929697467008B22ED /* Practice */,
 				D3EC83A929668A5E00117C85 /* HomeView.swift */,
 				D35C0EB5296817880032548D /* StarterView.swift */,
 				D35C0EB72968178F0032548D /* HistoryView.swift */,
-				D35C0EB9296817B60032548D /* ChallengeView.swift */,
-				D35C0EBB296817B60032548D /* ChoicesView.swift */,
-				D35C0EBD296817B60032548D /* QuestionView.swift */,
-				D35C0EBF296817B60032548D /* PracticeView.swift */,
-				D35C0EBA296817B60032548D /* CongratulationsView.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		D35C0EC8296817FB0032548D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D35C0EBE296817B60032548D /* ChallengesViewModel.swift */,
-			);
-			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		D38A69722966D57A0060331E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D35C0EBC296817B60032548D /* ChoicesRow.swift */,
 				D38A69732966D5A90060331E /* WelcomeBackgroundImage.swift */,
 				D3A3C7AA2967D549009F94AA /* BorderedViewModifier.swift */,
 			);
 			name = Components;
-			sourceTree = "<group>";
-		};
-		D3A3C7B42967DB6D009F94AA /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				D3A3C7AC2967DB25009F94AA /* UserManager.swift */,
-				D3A3C7AE2967DB2F009F94AA /* Profile.swift */,
-				D3A3C7B22967DB5F009F94AA /* Settings.swift */,
-			);
-			path = Profile;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D3A4A7942966787F00A0E0A6 = {
@@ -141,26 +124,66 @@
 			isa = PBXGroup;
 			children = (
 				D3A4A7A02966787F00A0E0A6 /* KuchiApp.swift */,
-				D38A69722966D57A0060331E /* Components */,
-				D35C0EC8296817FB0032548D /* ViewModels */,
+				D3E6193A2969750F008B22ED /* Models */,
 				D35C0EC7296817D20032548D /* Views */,
-				D3A3C7B42967DB6D009F94AA /* Profile */,
-				D3EC83AD29668B1700117C85 /* Welcome */,
-				D35199622966BB4000114051 /* jp.json */,
-				D351995B2966BAD000114051 /* Assets.xcassets */,
+				D3E6193D296975C9008B22ED /* ViewModels */,
+				D3E6194029697782008B22ED /* Resources */,
 				D30B185D2966ACF000B65A04 /* Info.plist */,
-				D35199602966BB0200114051 /* Preview Content */,
 			);
 			path = Kuchi;
+			sourceTree = "<group>";
+		};
+		D3E6193929697467008B22ED /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				D35C0EBA296817B60032548D /* CongratulationsView.swift */,
+				D35C0EBD296817B60032548D /* QuestionView.swift */,
+				D35C0EBF296817B60032548D /* PracticeView.swift */,
+				D35C0EBC296817B60032548D /* ChoicesRow.swift */,
+				D35C0EBB296817B60032548D /* ChoicesView.swift */,
+				D35C0EB9296817B60032548D /* ChallengeView.swift */,
+			);
+			name = Practice;
+			sourceTree = "<group>";
+		};
+		D3E6193A2969750F008B22ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3A3C7AC2967DB25009F94AA /* UserManager.swift */,
+				D3A3C7AE2967DB2F009F94AA /* Profile.swift */,
+				D3A3C7B22967DB5F009F94AA /* Settings.swift */,
+				D3E6193B2969751D008B22ED /* History.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3E6193D296975C9008B22ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D35C0EBE296817B60032548D /* ChallengesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3E6194029697782008B22ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D35199602966BB0200114051 /* Preview Content */,
+				D351995B2966BAD000114051 /* Assets.xcassets */,
+				D35199622966BB4000114051 /* jp.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D3EC83AD29668B1700117C85 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				D38A69722966D57A0060331E /* Components */,
 				D3EC83AE29668B2A00117C85 /* WelcomeView.swift */,
 				D38A69752966D6920060331E /* HorizontallyAlignedLabelStyle.swift */,
 				D38A69772966D8640060331E /* WelcomeMessageView.swift */,
 				D38A697B2966D93E0060331E /* RegisterView.swift */,
+				D3E6193E29697671008B22ED /* KCTextField.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -244,6 +267,7 @@
 				D38A69782966D8640060331E /* WelcomeMessageView.swift in Sources */,
 				D3A4A7A12966787F00A0E0A6 /* KuchiApp.swift in Sources */,
 				D35C0EB82968178F0032548D /* HistoryView.swift in Sources */,
+				D3E6193C2969751D008B22ED /* History.swift in Sources */,
 				D3EC83AF29668B2A00117C85 /* WelcomeView.swift in Sources */,
 				D38A697C2966D93E0060331E /* RegisterView.swift in Sources */,
 				D3A3C7B32967DB5F009F94AA /* Settings.swift in Sources */,
@@ -251,6 +275,7 @@
 				D38A69742966D5A90060331E /* WelcomeBackgroundImage.swift in Sources */,
 				D35C0EB6296817880032548D /* StarterView.swift in Sources */,
 				D38A69762966D6920060331E /* HorizontallyAlignedLabelStyle.swift in Sources */,
+				D3E6193F29697671008B22ED /* KCTextField.swift in Sources */,
 				D3A3C7AB2967D549009F94AA /* BorderedViewModifier.swift in Sources */,
 				D35C0EC0296817B60032548D /* ChallengesViewModel.swift in Sources */,
 				D3EC83AA29668A5E00117C85 /* HomeView.swift in Sources */,
@@ -382,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -410,7 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

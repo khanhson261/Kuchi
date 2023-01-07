@@ -7,28 +7,6 @@
 
 import SwiftUI
 
-struct History: Hashable {
-  let date: Date
-  let challenge: Challenge
-  
-  static func random() -> History {
-    let date = Date.init(timeIntervalSinceNow: -TimeInterval.random(in: 0...1000000))
-    
-    let challenge = ChallengesViewModel.challenges.randomElement()!
-    
-    return History(
-      date: date,
-      challenge: challenge
-    )
-  }
-  
-  static func random(count: Int) -> [History] {
-    return (0 ..< count)
-      .map({ _ in self.random() })
-      .sorted(by: { $0.date < $1.date })
-  }
-}
-
 struct HistoryView: View {
   let history = History.random(count: 2000)
   let dateFormatter: DateFormatter = {
@@ -77,9 +55,7 @@ struct HistoryView: View {
       }
     }
     .padding()
-    #if os(iOS)
     .frame(width: UIScreen.main.bounds.width)
-    #endif
   }
   
   var body: some View {

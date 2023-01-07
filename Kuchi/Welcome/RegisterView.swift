@@ -18,7 +18,7 @@ struct RegisterView: View {
             VStack(alignment: .center) {
               Spacer()
               WelcomeMessageView()
-                KCTextfield(placeholder: "Enter your name", value: $userManager.profile.name)
+                KCTextField(placeholder: "Enter your name", value: $userManager.profile.name)
                     .focused($nameFieldFocused)
                     .submitLabel(.done)
                     .onSubmit {
@@ -70,17 +70,5 @@ extension RegisterView {
             }
             userManager.persistSettings()
             userManager.setRegistered()
-    }
-}
-struct KCTextfield: View {
-    var placeholder: String
-    @Binding var value: String
-    var body: some View {
-        TextField(placeholder, text: $value)
-            .submitLabel(.done)
-            .bordered()
-           
-    
-           
     }
 }
